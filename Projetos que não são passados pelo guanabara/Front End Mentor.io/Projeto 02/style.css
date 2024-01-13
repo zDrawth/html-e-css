@@ -1,0 +1,83 @@
+@charset "UTF-8";
+:root{
+    --Light-slate-blue:hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+  }
+  *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box}
+body{
+    background-color: rgb(250, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    background-color: white;
+    height: 480px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.842);
+    border-radius: 20px 0px 0px 20px;
+}
+
+#pontuacao{
+    color: white;
+    text-align: center;
+    background-color: hsl(241, 81%, 54%);
+    max-width: 360px ;
+    height: 480px;
+    border-radius: 20px;
+}
+.blue-half{
+    background: linear-gradient(180deg, var(--Light-slate-blue), var(--Light-royal-blue));
+    color: var(--Light-lavender);
+    border-radius: 15px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px 50px;
+    text-align: center;
+}
+.number{
+    background: linear-gradient(180deg, var(--Violet-blue), var(--Persian-blue)
+    );
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.number strong, .mensagem h2 {
+    color: white;
+}
+.number strong{
+    font-size: 40px;
+}
+.mensagem h2{
+    margin-bottom: 20px;
+}
+
+#summary{
+    padding: 20px;
+}
+#summary h2{
+    color: var(--Dark-gray-blue);
+}

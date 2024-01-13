@@ -1,0 +1,30 @@
+@charset "UTF-8"; 
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(6, 126, 2);
+
+}
+h1#CriandoSites{
+    text-align: center;
+    background-color: aliceblue;
+
+}
+
+
+h2 {
+    color: rgb(76, 133, 74);
+}
+h2.basico{
+    color: rgb(1, 153, 1);
+}
+h2.intermediario {
+    color: rgb(207, 207, 2);
+}
+h2.Avançado{
+    color: rgb(230, 1, 1);
+}
